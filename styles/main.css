@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,500,700);
+body {
+  font-family: 'Work Sans', sans-serif
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.homepage {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 46px;
+  color: #0d0d0d;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.dash {
+  width: 60%;
+  height: 2px;
+  background-color: #0828CC;
+  display: inline-block;
+  margin: 0 10px 15px 0;
+  margin-left: -56%;
+}
+
+.info-content {
+  background-color: #0828CC;
+  padding: 60px 0;
+}
+
+.info-content h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 118px;
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.hero-title {
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 60px;
+  width: 70%;
+  margin-left: 28%;
+  transform: translate(0, 80%);
+}
+
+.underline {
+  border-bottom: 2px solid #0828CC;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-right: 612px;
+}
+
+.underline:visited {
+  color: #0d0d0d;
+}
+
+header {
+  height: 90vh;
+  display: block;
+  color: #0d0d0d;
+}
+
+header h1 {
+  display: block;
+  padding: 60px 60px 60px 10%;
+  margin-top: 0 color: #0d0d0d;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+  font-family: 'Work Sans', sans-serif;
+  transform: translate(0, 50%);
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-left: 7%;
+}
+
+.column .portfolio-element {
+  margin-bottom: 20%;;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.column.column1 {
+  margin-top: 60px;
+}
+
+.column.column2 {
+  margin-top: 105px;
+}
+
+.portfolio-element-wrapper {
+  box-shadow: 0 0 10px rgba(131, 138, 150, .3);
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.portfolio-element-wrapper img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-device-width:500px) and (max-device-width:1024px) {
+  .hero-title {
+    font-size: 35px;
+    line-height: 48px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+  }
+  .dash {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width:499px) {
+  header {
+    max-height: 450px
+  }
+  .hero-title {
+    font-size: 25px;
+    line-height: 41px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+  }
+  .dash {
+    margin-bottom: 5px;
+  }
+  .column {
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .column2 {
+    margin-top: 0;
+  }
+}
