@@ -16,6 +16,7 @@ header {
   height: 90vh;
   margin: 0 auto;
   display: block;
+  overflow: hidden;
 }
 
 .logo {
@@ -55,6 +56,7 @@ header {
   position: relative;
   text-decoration: none;
 }
+
 .hero-title h2 a:visited {
   color: #0d0d0d;
 }
@@ -87,11 +89,6 @@ header {
   letter-spacing: 0;
 }
 
-/*
-
-
-
-
 .dash {
   width: 60%;
   height: 2px;
@@ -101,12 +98,6 @@ header {
   margin-left: -56%;
 }
 
-
-
-
-
-
-
 .column {
   float: left;
   width: 40%;
@@ -114,7 +105,8 @@ header {
 }
 
 .column .portfolio-element {
-  margin-bottom: 20%;;
+  margin-bottom: 20%;
+  ;
 }
 
 .content {
@@ -146,20 +138,19 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-device-width:500px) and (max-device-width:1024px) {
+@media (max-width: 1024px) {
   .hero-title {
     font-size: 35px;
     line-height: 48px;
     width: 70%;
     margin-left: 15%;
-    text-align: center;
   }
   .dash {
     margin-bottom: 5px;
   }
 }
 
-@media only screen and (max-width:499px) {
+@media (max-width: 499px) {
   header {
     max-height: 450px
   }
@@ -168,7 +159,6 @@ footer {
     line-height: 41px;
     width: 70%;
     margin-left: 15%;
-    text-align: center;
   }
   .dash {
     margin-bottom: 5px;
@@ -181,4 +171,4 @@ footer {
   .column2 {
     margin-top: 0;
   }
-} */
+}
