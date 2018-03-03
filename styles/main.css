@@ -26,8 +26,8 @@ header {
 }
 
 .hero-title {
-  width: 60%;
-  margin-left: 28%;
+  width: 70%;
+  margin-left: 18%;
   height: 75%;
   display: flex;
   justify-content: center;
@@ -46,8 +46,8 @@ header {
   display: inline-block;
   height: 0.7em;
   vertical-align: bottom;
-  width: 52%;
-  margin-left: -48%;
+  width: 85%;
+  margin-left: -78%;
   border-top: 2px solid #0828CC;
   z-index: -1;
 }
@@ -71,6 +71,11 @@ header {
   left: 0;
   position: absolute;
 }
+#horizontal {
+    left: -20px;
+    position: absolute;
+
+}
 
 /* ------------- */
 
@@ -79,6 +84,7 @@ header {
   padding: 60px 0;
   width: 100%;
   overflow: hidden;
+  height: 120px;
 }
 
 .info-content h1 {
@@ -104,6 +110,9 @@ header {
   margin-left: 7%;
 }
 
+.column div{
+    line-height: 0;
+}
 .column .portfolio-element {
   margin-bottom: 20%;
   ;
@@ -139,26 +148,34 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .hero-title {
+  .hero-title  h2{
     font-size: 35px;
     line-height: 48px;
-    width: 70%;
-    margin-left: 15%;
+  }
+  .info-content {
+      height: 90px;
   }
   .dash {
     margin-bottom: 5px;
   }
+  .info-content h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90px;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 0;
 }
+}
+
+
 
 @media (max-width: 499px) {
   header {
     max-height: 450px
   }
-  .hero-title {
+  .hero-title  h2{
     font-size: 25px;
     line-height: 41px;
-    width: 70%;
-    margin-left: 15%;
   }
   .dash {
     margin-bottom: 5px;
