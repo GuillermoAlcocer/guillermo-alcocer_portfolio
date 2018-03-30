@@ -1,16 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700);
 html {}
 
 body {
   font-family: 'Work Sans', sans-serif;
   width: 100%;
-
 }
 
-/* ------------ HEADER ------------  */
+h1::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+h2::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+h3::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+h5::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+p::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+a::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+img::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+footer::selection {
+  background: rgba(8, 40, 204, 0.85);
+  color: #fff;
+}
+
+/* ---------------------------------
+------------------------------------
+------------ HOMEPAGE --------------
+------------------------------------
+--------------------------------- */
+
+/* ---------------------------------
+-------------- HEADER --------------
+--------------------------------- */
 
 header {
   width: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: 46px;
+  margin-top: 40px;
 }
 
 .homepage {
@@ -18,12 +71,6 @@ header {
   margin: 0 auto;
   display: block;
   overflow: hidden;
-}
-
-.logo {
-  width: 200px;
-  height: 40px;
-  margin-top: 40px;
 }
 
 .hero-title {
@@ -40,13 +87,6 @@ header {
   font-size: 40px;
   line-height: 60px;
   color: #0d0d0d;
-}
-
-.hero-title h2::selection  {
-  background: rgba(8, 40, 204, 0.85);
-  color: #fff;
-
-
 }
 
 .hero-title h2::before {
@@ -80,37 +120,16 @@ header {
   left: 0;
   position: absolute;
 }
-#scroll-horizontal {
-    left: 0px;
-}
-.content .column h3{
-  font-family: 'Work Sans', sans-serif;
-  font-size: 34px;
-  color: #ffffff;
-  font-weight: 700;
-  position: absolute;
-  left: 22px;
-  bottom: 68px;
-}
-.content .column p{
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 400;
-  position: absolute;
-  left: 22px;
-  bottom: 34px;
-}
 
-
-/* ------------- */
+/* ---------------------------------
+-------------- SCROLL --------------
+--------------------------------- */
 
 .info-content {
   background-color: #0828CC;
   padding: 60px 0;
   width: 100%;
   overflow: hidden;
-
 }
 
 .info-content h1 {
@@ -121,27 +140,18 @@ header {
   letter-spacing: 0;
 }
 
-.dash {
-  width: 60%;
-  height: 2px;
-  background-color: #0828CC;
-  display: inline-block;
-  margin: 0 10px 15px 0;
-  margin-left: -56%;
+#scroll-horizontal {
+  left: 0px;
 }
+
+/* ---------------------------------
+-------------- COLUMN --------------
+--------------------------------- */
 
 .column {
   float: left;
   width: 40%;
-  margin-left: 7%;
-}
-
-.column div{
-    line-height: 0;
-}
-.column .portfolio-element {
-  margin-bottom: 20%;
-  ;
+  margin-left: 6%;
 }
 
 .content {
@@ -156,64 +166,277 @@ header {
   margin-top: 105px;
 }
 
+.column .portfolio-element {
+  margin-bottom: 20%;
+}
+
+.content .column h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  color: #0d0d0d;
+  font-weight: 500;
+}
+
+.content .column p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #0d0d0d;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
 .portfolio-element-wrapper {
-  box-shadow: 0 0 10px rgba(131, 138, 150, .3);
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
   margin-bottom: 60px;
+  text-decoration: none;
 }
 
-.portfolio-element-wrapper img {
+.portfolio-element-wrapper-img {
   width: 100%;
+  box-shadow: 0 0rem 1rem rgba(8, 40, 204, .1);
+  transform: rotate(0deg) scale(1);
+  transition: all 0.5s ease-in-out;
 }
+
+.portfolio-element-wrapper:hover>.portfolio-element-wrapper-img {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 0 1rem 1rem rgba(8, 40, 204, .1);
+  transition: all 0.5s ease-in-out;
+}
+
+.text-cover {
+  margin-top: 20px;
+}
+
+/* ---------------------------------
+-------------- FOOTER --------------
+--------------------------------- */
 
 footer {
   text-align: center;
+  line-height: 72px;
 }
 
+/* ---------------------------------
+------------------------------------
+----------- SECTIONPAGE ------------
+------------------------------------
+--------------------------------- */
+
+.sectionpage {
+  height: 40vh;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+
+.header-sectionpage {
+  width: 60%;
+  margin: 10% auto;
+}
+
+.header-sectionpage h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 56px;
+  line-height: 60px;
+  color: #0d0d0d;
+}
+
+.header-sectionpage h2::before {
+  content: "";
+  display: inline-block;
+  height: 0.48em;
+  vertical-align: bottom;
+  width: 82%;
+  margin-left: -78%;
+  border-top: 2px solid #0828CC;
+  z-index: -1;
+}
+
+.details {
+  margin: 30px 4.5%;
+}
+
+.level {
+  width: 33.33%;
+  float: left;
+}
+
+.level h5 {
+  color: #0828cc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.level p {
+  color: #0d0d0d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.container-section {
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  margin-top: 7%;
+}
+
+.container-section p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.container-section h2 {
+  color: #0828cc;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-top: 70px;
+  margin-bottom: 14px;
+}
+
+.container-img-sectionpage{
+  width: 100%;
+}
+/* ---------------------------------
+------------------------------------
+-------------- MEDIA ---------------
+------------------------------------
+--------------------------------- */
+
 @media (max-width: 1024px) {
-  .hero-title  h2{
+  /* -----------------
+  ------ HEADER ------
+  ----------------- */
+  .hero-title h2 {
     font-size: 35px;
     line-height: 48px;
   }
-
-  .dash {
-    margin-bottom: 5px;
-  }
+  /* -----------------
+  ------ SCROLL ------
+  ----------------- */
   .info-content h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 90px;
     color: #FFFFFF;
     font-weight: 700;
     letter-spacing: 0;
+  }
+
+  .container-section p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container-section h2 {
+    color: #0828cc;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 48px;
+      margin-top: 60px;
+      margin-bottom: 8px;
+  }
+  .container-section {
+    width: 75%;
+  }
+
+.header-sectionpage {
+    width: 80%;
+    margin: 20% auto;
+}
+.header-sectionpage h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
+    line-height: 60px;
+    color: #0d0d0d;
+}
+.level {
+  width: 100%;
+margin-top: 10px;
+}
+.details {
+    margin: 16px 4.5%;
+}
+.header-sectionpage {
+    width: 80%;
+    margin: 8% auto;
 }
 }
 
-
-
-
-@media (max-width: 499px) {
+@media (max-width: 768px) {
+  /* -----------------
+  ------ HEADER ------
+  ----------------- */
   header {
     max-height: 450px
   }
-  .hero-title  h2{
+  .hero-title h2 {
     font-size: 30px;
     line-height: 45px;
   }
-  .dash {
-    margin-bottom: 5px;
-  }
+  /* -----------------
+  ------ COLUMN ------
+  ----------------- */
   .content {
     margin-top: 20px;
-}
+  }
   .column {
     float: left;
     width: 90%;
     margin-left: 5%;
   }
   .column.column2 {
-      margin-top: 0;
+    margin-top: 0;
+  }
+  .info-content h1 {
+    font-size: 70px;
+  }
+  .header-sectionpage {
+    width: 60%;
+    margin: 8% auto;
+}
+.header-sectionpage h2::before {
+  content: "";
+  display: inline-block;
+  height: 0.6em;
+  vertical-align: bottom;
+  width: 82%;
+  margin-left: -78%;
+  border-top: 2px solid #0828CC;
+  z-index: -1;
+}
+}
+
+@media (min-width: 1400px) {
+  /* -----------------
+  ------ COLUMN ------
+  ----------------- */
+  .header-sectionpage {
+      width: 60%;
+      margin: 8% auto;
+  }
+  .content {
+    width: 1380px;
+    margin: 100px auto;
+  }
+  .content .column h3 {
+    font-size: 26px;
+  }
+  .content .column p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+  .container-section {
+    width: 45%;
   }
 }
