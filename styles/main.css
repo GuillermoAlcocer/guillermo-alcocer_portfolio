@@ -283,7 +283,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   width: 45%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .container-section p {
@@ -295,15 +295,16 @@ footer {
 }
 .container-section h2 {
   color: #0828cc;
-  font-size: 38px;
-  font-weight: 300;
-  line-height: 46px;
-  margin-top: 70px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-top: 140px;
   margin-bottom: 14px;
 }
 
-.container-img-sectionpage{
-  width: 100%;
+.container-img-sectionpage {
+  width: 140%;
+  margin-left: -20%;
 }
 /* ---------------------------------
 ------------------------------------
@@ -339,11 +340,11 @@ footer {
   }
   .container-section h2 {
     color: #0828cc;
-      font-size: 26px;
-      font-weight: 300;
-      line-height: 48px;
-      margin-top: 60px;
-      margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 100px;
+    margin-bottom: 8px;
   }
   .container-section {
     width: 75%;
@@ -437,6 +438,6 @@ margin-top: 10px;
     margin-top: 8px;
   }
   .container-section {
-    width: 45%;
+    width: 35%;
   }
 }
