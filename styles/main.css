@@ -289,23 +289,42 @@ footer {
 .container-section p {
   font-size: 20px;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 42px;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
+
 .container-section h2 {
   color: #0828cc;
   font-size: 26px;
   font-weight: 400;
   line-height: 29px;
-  margin-top: 140px;
+  margin-top: 14px;
   margin-bottom: 14px;
+}
+
+.container-text {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .container-img-sectionpage {
   width: 140%;
   margin-left: -20%;
 }
+
+.container-img-sectionpage-50 {
+  width: 200%;
+  margin-left: -50%;
+}
+
+.container-img-sectionpage-100 {
+  width: 290%;
+  margin-left: -93%;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
 /* ---------------------------------
 ------------------------------------
 -------------- MEDIA ---------------
@@ -330,7 +349,6 @@ footer {
     font-weight: 700;
     letter-spacing: 0;
   }
-
   .container-section p {
     font-size: 16px;
     font-weight: 300;
@@ -349,28 +367,27 @@ footer {
   .container-section {
     width: 75%;
   }
-
-.header-sectionpage {
+  .header-sectionpage {
     width: 80%;
     margin: 20% auto;
-}
-.header-sectionpage h2 {
+  }
+  .header-sectionpage h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 42px;
     line-height: 60px;
     color: #0d0d0d;
-}
-.level {
-  width: 100%;
-margin-top: 10px;
-}
-.details {
+  }
+  .level {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .details {
     margin: 16px 4.5%;
-}
-.header-sectionpage {
+  }
+  .header-sectionpage {
     width: 80%;
     margin: 8% auto;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -404,17 +421,29 @@ margin-top: 10px;
   .header-sectionpage {
     width: 60%;
     margin: 8% auto;
-}
-.header-sectionpage h2::before {
-  content: "";
-  display: inline-block;
-  height: 0.6em;
-  vertical-align: bottom;
-  width: 82%;
-  margin-left: -78%;
-  border-top: 2px solid #0828CC;
-  z-index: -1;
-}
+  }
+  .header-sectionpage h2::before {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 82%;
+    margin-left: -78%;
+    border-top: 2px solid #0828CC;
+    z-index: -1;
+  }
+  .container-img-sectionpage {
+    width: 130%;
+    margin-left: -15%;
+  }
+  .container-img-sectionpage-100 {
+    width: 138%;
+    margin-left: -17%;
+  }
+  .container-img-sectionpage-50 {
+    width: 127%;
+    margin-left: -14%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -422,8 +451,8 @@ margin-top: 10px;
   ------ COLUMN ------
   ----------------- */
   .header-sectionpage {
-      width: 60%;
-      margin: 8% auto;
+    width: 60%;
+    margin: 8% auto;
   }
   .content {
     width: 1380px;
