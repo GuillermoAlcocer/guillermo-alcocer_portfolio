@@ -354,15 +354,15 @@ footer {
     font-weight: 300;
     line-height: 32px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .container-section h2 {
     color: #0828cc;
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
-    margin-top: 100px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .container-section {
     width: 75%;
@@ -444,6 +444,10 @@ footer {
     width: 127%;
     margin-left: -14%;
   }
+  .container-text {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -464,7 +468,7 @@ footer {
   .content .column p {
     font-size: 18px;
     font-weight: 400;
-    margin-top: 8px;
+    margin-top: 10px;
   }
   .container-section {
     width: 35%;
