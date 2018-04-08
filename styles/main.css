@@ -46,6 +46,40 @@ footer::selection {
   color: #fff;
 }
 
+.p-linkedin {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0d0d0d;
+  font-family: 'Work Sans', sans-serif;
+  color: #0828CC;
+  right: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 64px;
+}
+
+.p-linkedinvisited {
+  color: #0828CC;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #0d0d0d;
+  margin-left: 4%;
+}
+
+li::before {
+  content: "- ";
+  color: #0828CC;
+}
+
 /* ---------------------------------
 ------------------------------------
 ------------ HOMEPAGE --------------
@@ -75,7 +109,7 @@ header {
 
 .hero-title {
   width: 60%;
-  margin-left: 30%;
+  margin-left: 25%;
   height: 75%;
   display: flex;
   justify-content: center;
@@ -110,7 +144,7 @@ header {
   color: #0828CC;
 }
 
-.hero-title h2 a::after {
+.hero-title a::after {
   content: "";
   height: 2px;
   background-color: #0828CC;
@@ -119,6 +153,10 @@ header {
   bottom: -8px;
   left: 0;
   position: absolute;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* ---------------------------------
@@ -134,7 +172,7 @@ header {
 
 .info-content h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 118px;
+  font-size: 96px;
   color: #FFFFFF;
   font-weight: 700;
   letter-spacing: 0;
@@ -142,6 +180,10 @@ header {
 
 #scroll-horizontal {
   left: 0px;
+}
+
+.fade {
+  opacity: 0;
 }
 
 /* ---------------------------------
@@ -209,6 +251,10 @@ header {
 
 .text-cover {
   margin-top: 20px;
+}
+
+.grid-img {
+  margin-top: -20%;
 }
 
 /* ---------------------------------
@@ -360,7 +406,7 @@ footer {
     color: #0828cc;
     font-size: 20px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -395,11 +441,23 @@ footer {
   ------ HEADER ------
   ----------------- */
   header {
-    max-height: 450px
+    max-height: 645px;
   }
   .hero-title h2 {
     font-size: 30px;
     line-height: 45px;
+  }
+  .p-linkedin {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    color: #0828CC;
+    right: 0;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 64px;
   }
   /* -----------------
   ------ COLUMN ------
@@ -445,8 +503,30 @@ footer {
     margin-left: -14%;
   }
   .container-text {
-    margin-top: 110px;
+    margin-top: 50px;
     margin-bottom: 110px;
+  }
+  .details {
+    margin: 4px 4.5%;
+  }
+  .level h5 {
+    color: #0828cc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+  }
+  .level p {
+    color: #0d0d0d;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .level {
+    width: 100%;
+    margin-top: 4px;
+  }
+  .grid-img {
+    margin-top: -13%;
   }
 }
 
